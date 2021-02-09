@@ -42,7 +42,7 @@ GRUB (Grand Unified Bootloader ) executes kernel can be found in /boot dir
 kernel _ executes sbin/init assembly label codes which interacts with hardware 
 RunLevel - Runlevel programs are executed from etc/rc/rc.d/rc*.d/
 
-................................................................................................................................................................
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
