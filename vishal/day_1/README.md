@@ -24,3 +24,81 @@ After the selected kernel is loaded into memory and begins executing, it must fi
 **STEP 4 ** **Systemd**
 
 It mounts the file system and starts the services on the device
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Linux Basic Commands that I executed ** 
+
+**ls**
+
+list the content of the directory.
+*ls -l*   Displays long list and also the file size permissions and edit time 
+*ls -a*   shows hidden file and directory 
+
+**pwd** 
+
+Prints the working directory that is the current directory location 
+
+**Cd** 
+
+Change directory helps to change our working directory similar to cmd in windows
+
+**rm**
+
+followed by name of file or directory or address deltes the file/directory 
+
+**clear** 
+to clean up the terminal 
+
+**mkdir** 
+
+to create a directory 
+
+**touch**
+
+to create a file and even tried touch --help and found the extensive command for the same one of them .touch for creating a hidden file.
+
+**su** 
+
+gave me admin privilaged was able to run few adminstrative commands such as *sudo poweroff* in some cases password and sudo prefix was required 
+
+**cp**
+
+for copying files cp - r copying a directory 
+
+**cat** 
+
+It is displayed the output of the text file in the terminal 
+*cat > vishal.txt * created a file named  vishal 
+
+cat sagar.txt vishal.txt>vk.txt merged the text in the files
+
+**locate** 
+
+found it similar search in windows and find was also similar it was returning the contents just from the current directory
+
+
+**Head and tail **
+
+displayed the first few line of txt file while tail displayed last few lines 
+
+**df** 
+displayed toatal disk used by virtual machine 
+
+**uname** 
+
+printed my virtual box details with kernel 
+
+**useradd**
+
+for adding new users required su command 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
