@@ -8,6 +8,7 @@ This is the hardware portion of the boot process and is the same for any operati
 BIOS interrupt calls are a facility that operating systems and applications use to take basic hardware controls
 
 **STEP2*** **BOOT Loader** 
+
 *Boot Loader* is program which helps the computer to find the OS kernel and load it into memory .
 In case of linux system there are multiple bootloaders avilable likeGRUB (GRand Unified Bootloader),LILO (Linux Loader),SYSLINUX
 Currently **GRUB** is the the most widely used in linux distributions 
@@ -16,8 +17,10 @@ and all popular linux file system .LILO laked support of dual boot and didn't Su
 
 
 **STEP 3 ** **KERNEL**
+
 *KERNEL* is responsible for interaction between the hardware and Os and services deployed over it.
 After the selected kernel is loaded into memory and begins executing, it must first extract itself from the compressed version of the file before it can perform any useful work. Once the kernel has extracted itself, it loads systemd.
 
 **STEP 4 ** **Systemd**
+
 It mounts the file system and starts the services on the device
