@@ -35,4 +35,35 @@ Was written by David Korn at AT&T Bell Labs .It had combined features of bourne 
 Was wriiten by Brian Fox.Is  most commonly used default shell in linux distributions and it is compact version of Bash shell has features of both korn and C shell
 It has the ability to run commands from the file .
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**A Linux distribution  is an operating system made from a software collection that is based upon the Linux kernel .**
+
+
+
+**Different linux distributions are **
+
+
+Debian
+
+Gentoo
+
+Ubuntu.
+
+Linux Mint
+
+
+Red Hat Enterprise Linux
+
+
+CentOS
+
+Fedora
+
+Kali Linux.
+
+
+
+
+
 
