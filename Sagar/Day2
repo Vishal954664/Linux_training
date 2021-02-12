@@ -1,0 +1,53 @@
+Shell Expansion:- When a command is entered in the command line, it expands into its output which is displayed. This is called expansion.
+There are seven kinds of expansion performed:
+1.	brace expansion.
+2.	tilde expansion.
+3.	parameter and variable expansion.
+4.	command substitution.
+5.	arithmetic expansion.
+6.	word splitting.
+7.	filename expansion.
+
+
+Various control operators
+
+1. semicolon(;):- More than one command can be used in a singleline.
+
+put two or more commands on the same line separated by a semicolon(;)
+Ex.-
+datasoft@datasoft-linux:~$ echo Ram
+Ram
+datasoft@datasoft-linux:~$ echo Shyam
+Shyam
+datasoft@datasoft-linux:~$ echo Ram ; echo Shyam
+Ram
+Shyam
+
+2. & ampersand :- Command ends with & and doesn't wait for command to finish.
+
+3. $?dollar question mark:- Used to store exit code of the previous command.
+4. && double ampersand:- Used as logical AND.
+5. || double vertical bar:- Used as logical OR.
+6. Combining && and || :- Used to write if then else structure in command line
+7. # pound sign:- Anything written after # will be ignored.
+
+
+
+
+
+Shell Variables:- A shell variable is a special variable that is set by the shell and is required by the shell in order to function correctly.
+	There are two types of shell variables:-
+1.	Environment variables – Variables that are exported to all processes spawned by the shell. Their settings can be seen with the env command.
+2.	Shell (local) variables – Variables that affect only the current shell.
+
+Shell History:- 
+In Linux, there is a very useful command to show you all of the last commands that have been recently used. The command is simply called history, but can also be accessed by looking at your . bash_history in your home folder. By default, the history command will show you the last five hundred commands you have entered.
+Where is Shell history stored?
+	The bash shell stores the history of commands using history file at~/. bash_history by default.
+
+
+
+
+File Globbing:-
+	File globbing is a feature provided by the UNIX/Linux shell to represent multiple filenames by using special characters called wildcards with a single file name. A wildcard is essentially a symbol which may be used to substitute for one or more characters.
+
