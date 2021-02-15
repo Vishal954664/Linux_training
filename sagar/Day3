@@ -1,0 +1,20 @@
+Text processing:- Text processing is the automated process of analyzing text data for getting structured information. Commands affecting text and text files sort. File sort utility, often used as a filter in a pipe. This command sorts a text stream or file forwards or backwards, or according to various keys or character positions.
+
+some of the useful file or text filters in Linux:-
+1.	Awk Command
+AWK command in Linux enable a programmer to write useful programs in the form of statements defining specific patterns to be searched for in each line of the file and the action which is to be taken when a match is found within a line. AWK command in Unix is used for pattern processing and scanning.
+Awk is a remarkable pattern scanning and processing language, it can be used to build useful filters in Linux.
+Awk is a general-purpose scripting language designed for advanced text processing. It is mostly used as a reporting and analysis tool.
+		$ man awk
+
+
+	2. Sed Command
+SED command in UNIX is stands for stream editor and it can perform lot's of function on file like, searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace.
+
+sed is a powerful stream editor for filtering and transforming text. 
+			$ man sed
+
+
+2.	grep command
+GREP stands for Globally Search a Regular Expression and Print. The basic usage of the command is grep [options] expression filename . GREP will by default display any lines in a file that contain the expression. GREP command can be used to find or search a regular expression or a string in a text file.
+SED command in UNIX is stands for stream editor and it can perform lot's of function on file like, searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace.
