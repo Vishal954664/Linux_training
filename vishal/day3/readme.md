@@ -61,6 +61,34 @@ The backslash \ character enables the use of control characters, but without the
 ## Redirectional operator 
 
 
+**Output Redirection**
+
+
+The '>' symbol is used for output redirection.
+
+> vishal@vishal-VirtualBox:~$ ls > read.txt
+
+
+
+> vishal@vishal-VirtualBox:~$ cat read.txt
+> Desktop
+Documents
+Downloads
+Linux_training
+Music
+Pictures
+projecttest
+Public
+read.txt
+sagar
+snap
+Templates
+Videos
+vishal
+vishal.txt
+
+
+
 
 
 
