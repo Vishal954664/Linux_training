@@ -119,6 +119,33 @@ $ is used for addressing them after they are decleared .
 _______________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 
+## Vim Editor 
+
+This works as text editor as custom editors are not available in light weight linux server .
+
+
+we can edit files by opening it for opening we just need to type vim followed by a file name  vim vishal.html
+
+
+when we enter editor is in command and has following commands for performing operation : -]
+
+
+* 1 **(insert mode )** i  can be entered in command to set the editor in insert mode once insert mode is acivated we can nagivate to the line and enter the text . 
+* 2  **(delete line)** dd can be entered in cmd mode to set the editor in delete a line  and it deletes the line cursor is pointing. multiple lines can be also deleted using 3dd i.e number of lines followed by dd .
+* 3  **(Undo & Redo ) U in cmd mode for undo and ctrl +R for Redo.
+* 4  **(Seraching) forward / can be used in cmd mode followed by the string to be searched 
+* 5  **(Search and Replace ) :%S/string to replaced /string to be used as replacement 
+* 6  **(to save/write the data)** :w to write the data 
+* 7  **(to save and quit)**  :wq  in command mode 
+* 8  **(to quit without saving)**: in command mode :q!   
+ 
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+
+
+
+
 
 
 
