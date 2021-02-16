@@ -71,6 +71,8 @@ The '>' symbol is used for output redirection.
 
 
 > vishal@vishal-VirtualBox:~$ cat read.txt
+
+
 > Desktop
 Documents
 Downloads
@@ -86,6 +88,42 @@ Templates
 Videos
 vishal
 vishal.txt
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+**Input Redirection**
+
+
+The '<' symbol is used for input redirection .We can Take input from devices other stdinput that is keyboard or mouse instead of that we can use a file as an input in terminal.
+
+
+**File Globaling**
+
+This is used for sorting files by name or alphabetical order or extensions it can be done by using "*" and "??" syntaxt with list operartor
+
+**History**
+
+
+This is used to display the last comments & commands used by user after the bootup 
+
+
+**Shell Varibles**
+
+
+It is used to store data of various data data type at an micro label the variables basically store the address of the stack location where the data is stored in the memory .
+$ is used for addressing them after they are decleared .
+
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
 
 
 
