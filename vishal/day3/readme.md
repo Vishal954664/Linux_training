@@ -140,7 +140,173 @@ when we enter editor is in command and has following commands for performing ope
 * 8  **(to quit without saving)**: in command mode :q!   
  
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
+### Cut Command 
+
+
+Cut command in linux is linux is used for cutting a section of a file by byte position , character, field in linux and it displays them over the terminal 
+
+
+**-b(byte)** 
+
+
+-b is used for by cuting the byte -b is followed by byte positions to be cut multiple positions can be specified by separating them by , .
+
+vishal@vishal-VirtualBox:~$ cut -b 1,2,3 name.txt
+
+
+Vis
+
+
+joh
+
+
+Sag
+
+
+Adi
+
+
+vishal@vishal-VirtualBox:~$ cat name.txt
+
+
+Vishal Kumar
+
+
+john mathew 
+
+
+Sagar Mahato 
+
+
+Aditya Raj
+
+
+ishal@vishal-VirtualBox:~$ cut -b 1- name.txt
+
+
+Vishal Kumar
+
+
+john mathew 
+
+
+Sagar Mahato 
+
+
+Aditya Raj
+
+
+vishal@vishal-VirtualBox:~$ cut -b 2- name.txt
+ishal Kumar
+
+
+ohn mathew 
+
+
+agar Mahato 
+
+
+ditya Raj
+
+we can cut even from starting of the byte position to end of line using - indication after or before byte place indicating numeral.
+
+
+cut by character is also similar -c can be used as option 
+
+ishal@vishal-VirtualBox:~$ cut -c 2,5,7 name.txt
+
+
+ia 
+
+
+o a
+
+
+arM
+
+
+dy 
+
+
+vishal@vishal-VirtualBox:~$ cut -c 1-3 name.txt
+
+
+Vis
+
+
+joh
+
+
+Sag
+
+
+Adi
+
+
+vishal@vishal-VirtualBox:~$ cut -c 1- name.txt
+
+
+Vishal Kumar
+
+
+john mathew 
+
+
+Sagar Mahato 
+
+
+Aditya Raj
+
+
+vishal@vishal-VirtualBox:~$ cut -c -4 name.txt
+
+
+Vish
+
+
+john
+
+
+Saga
+
+
+Adit
+
+
+vishal@vishal-VirtualBox:~$ cut -d " " -f 1 name.txt
+
+
+Vishal
+
+
+john
+
+
+Sagar
+
+
+Aditya
+
+-f is used to cut fileds while with combination of -d is used as delimeter with it and charater/filed by which file is to cut is also specified .
+
+
+vishal@vishal-VirtualBox:~$ cut -d " " -f 2 name.txt
+
+
+Kumar
+
+
+mathew
+
+
+Mahato
+
+
+Raj
+
+
+
+
 
 
 
