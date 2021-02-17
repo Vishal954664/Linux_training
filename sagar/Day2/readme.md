@@ -6,7 +6,7 @@ There are 5 basics types in operators:-
 5. file test operators
 
 
-1. Arithmetic operators:- These operators are used to perform normal arithmetic/mathematical
+*1. Arithmetic operators:- These operators are used to perform normal arithmetic/mathematical
 	operators. There are 7 arithmetic operators:-
 	** Addition(+): used to add two operands
 	**Subtraction(-):- used to subtract two operands
@@ -19,11 +19,11 @@ There are 5 basics types in operators:-
 	read - p 'Enter a : ' a
 		p 'Enter b : ' b
 
-add
+*add
 = $((a+b))
 echo Addition of a and n are $add
 
-sub
+*sub
 = $((a-b))
 echo Subtraction of a and b are $sub
 
@@ -53,7 +53,7 @@ operator when applied on "b" results into b = $b
 
 
 
-2. Relational operators:- Relational operators are those operators which defines the relation between two operands. 
+**2. Relational operators:- Relational operators are those operators which defines the relation between two operands. 
 They give either true or false depending upon the relation.
 
 		Enter a = a
@@ -105,7 +105,7 @@ else
 
 
 
-3. Logical Operators : They are also known as boolean operators. 
+**3. Logical Operators : They are also known as boolean operators. 
 These are used to perform logical operations. 
 They are of 3 types:
 		Enter a = a;
@@ -131,7 +131,7 @@ else
 
 
 
-4. Bitwise Operators : A bitwise operator is an operator used to perform bitwise operations on bit patterns.
+**4. Bitwise Operators : A bitwise operator is an operator used to perform bitwise operations on bit patterns.
 They are of 6 types:
 Enter a = a
 Enter b = b
