@@ -306,6 +306,56 @@ Raj
 
 
 
+----------------------------------------------------------------------------------------------------------------------
+### Find Command 
+
+It is commad in linux to locate files folder it can search files by name ,creation date ,modification date and by user in mutiple user platform . 
+
+
+vishal@vishal-VirtualBox:~$ find -name sagar.txt
+
+
+./sagar.txt
+
+
+
+vishal@vishal-VirtualBox:~$ find Linux_training -name hello.txt
+Linux_training/hello.txt
+
+
+
+vishal@vishal-VirtualBox:~$ find Linux_training/vishal -name day3
+
+
+Linux_training/vishal/day3
+
+
+####### Find and remove operation can be also executed 
+
+vishal@vishal-VirtualBox:~$ find Linux_training -name hello.txt -exec rm -i {} \;
+
+
+rm: remove regular file 'Linux_training/hello.txt'? y
+
+------------------------------------------------------------------------------------------------------
+## Tr commad 
+
+It helps in transformation of characters from upper case to lower case and vice versa ,squeezing repeating characters delete specific character and basic find and replace .
+
+
+vishal@vishal-VirtualBox:~$ cat test.txt
+
+
+HII THIS IS VISHAL vishal
+
+
+vishal@vishal-VirtualBox:~$ cat test.txt | tr "[:upper:]" "[:lower:]"
+
+
+hii this is vishal
+
+
+
 
 
 
