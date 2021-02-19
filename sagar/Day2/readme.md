@@ -80,7 +80,7 @@ then
 else
     echo a is not less than b. 
 
-‘>’ Operator : Greater than operator return true if the first operand is greater than the second operand otherwise return false.
+**‘>’ Operator : Greater than operator return true if the first operand is greater than the second operand otherwise return false.
 if(( $a>$b )) 
 then
     echo a is greater than b. 
@@ -89,14 +89,14 @@ else
 
 
 
-‘<=' Operator : Less than or equal to operator returns true if first operand is less than or equal to second operand otherwise returns false
+**‘<=' Operator : Less than or equal to operator returns true if first operand is less than or equal to second operand otherwise returns false
 if(( $a<=$b )) 
 then
     echo a is less than or equal to b. 
 else
     echo a is not less than or equal to b. 
 
-‘>=’ Operator : Greater than or equal to operator returns true if first operand is greater than or equal to second operand otherwise returns false
+**‘>=’ Operator : Greater than or equal to operator returns true if first operand is greater than or equal to second operand otherwise returns false
 if(( $a>=$b )) 
 then
     echo a is greater than or equal to b. 
@@ -110,19 +110,25 @@ These are used to perform logical operations.
 They are of 3 types:
 		Enter a = a;
 		Enter b = b;
-Logical AND (&&) : This is a binary operator, which returns true if both the operands are true otherwise returns false.
+
+
+**Logical AND (&&) : This is a binary operator, which returns true if both the operands are true otherwise returns false.
 if(($a == "true" & $b == "true" )) 
 then
     echo Both are true. 
 else
     echo Both are not true. 
-Logical OR (||) : This is a binary operator, which returns true is either of the operand is true or both the operands are true and returns false if none of then is false.
+
+
+**Logical OR (||) : This is a binary operator, which returns true is either of the operand is true or both the operands are true and returns false if none of then is false.
 if(($a == "true" || $b == "true" )) 
 then
     echo Atleast one of them is true. 
 else
     echo None of them is true. 
-Not Equal to (!) : This is a uninary operator which returns true if the operand is false and returns false if the operand is true.
+
+
+**Not Equal to (!) : This is a uninary operator which returns true if the operand is false and returns false if the operand is true.
 if(( ! $a == "true"  )) 
 then
     echo "a" was false. 
@@ -135,49 +141,53 @@ else
 They are of 6 types:
 Enter a = a
 Enter b = b
-Bitwise And (&) : Bitwise & operator performs binary AND operation bit by bit on the operands.
+
+
+**Bitwise And (&) : Bitwise & operator performs binary AND operation bit by bit on the operands.
 bitwiseAND=$(( a&b )) 
 echo Bitwise AND of a and b is $bitwiseAND 
 
-Bitwise OR (|) : Bitwise | operator performs binary OR operation bit by bit on the operands.
+
+
+**Bitwise OR (|) : Bitwise | operator performs binary OR operation bit by bit on the operands.
 bitwiseOR=$(( a|b )) 
 echo Bitwise OR of a and b is $bitwiseOR
 
-Bitwise XOR (^) : Bitwise ^ operator performs binary XOR operation bit by bit on the operands.
+**Bitwise XOR (^) : Bitwise ^ operator performs binary XOR operation bit by bit on the operands.
 bitwiseXOR=$(( a^b )) 
 echo Bitwise XOR of a and b is $bitwiseXOR 
 
-Bitwise compliment (~) : Bitwise ~ operator performs binary NOT operation bit by bit on the operand.
+**Bitwise compliment (~) : Bitwise ~ operator performs binary NOT operation bit by bit on the operand.
 bitiwiseComplement=$(( ~a )) 
 echo Bitwise Compliment of a is $bitiwiseComplement
 
-Left Shift (<<) : This operator shifts the bits of the left operand to left by number of times specified by right operand.
+**Left Shift (<<) : This operator shifts the bits of the left operand to left by number of times specified by right operand.
   leftshift=$(( a<<1 )) 
 echo Left Shift of a is $leftshift 
 
-Right Shift (>>) : This operator shifts the bits of the left operand to right by number of times specified by right operand.
+**Right Shift (>>) : This operator shifts the bits of the left operand to right by number of times specified by right operand.
 rightshift=$(( b>>1 )) 
 echo Right Shift of b is $rightshift 
 
 
 
-5. File Test Operator : These operators are used to test a particular property of a file
+**5. File Test Operator : These operators are used to test a particular property of a file
 
 
 
-Shall variable:- it is a variable same as an other programming languages whuich is used to store the data with in use rhe terminal
+**Shall variable:- it is a variable same as an other programming languages whuich is used to store the data with in use rhe terminal
 	my name = sagar 
 	echo$ myname 
 	 o/p- sagar
 
 
-shell history:- history is a command that displays the previous commands executed in the terminal as output.
+**shell history:- history is a command that displays the previous commands executed in the terminal as output.
 
 
-file globbing:-  it is a arranging/sorting of files by there name or alphabatical order. 
+**file globbing:-  it is a arranging/sorting of files by there name or alphabatical order. 
 	* ? a than b
 
-redirection operators:- it is used to redirect the output or input from the shell.
+**redirection operators:- it is used to redirect the output or input from the shell.
 	
 
 
@@ -186,7 +196,7 @@ redirection operators:- it is used to redirect the output or input from the shel
 
 
 
-Vi- Vi stands for Visual.
+**Vi- Vi stands for Visual.
 vi is a screen-oriented text editor originally created for the Unix operating system. The portable subset of the behavior of vi and programs based on it, and the ex editor language supported within these programs, is described by the Single Unix Specification and POSIX.
 VI Editing commands
 
@@ -229,7 +239,9 @@ VI Editing commands
 •	S - Substitute entire line and begin to insert at the beginning of the line
 
 •	~ - Change case of individual character
-Summary:
+
+
+**Summary:
 
 •	The vi editor is the most popular and commonly used Unix text editor
 
@@ -246,21 +258,26 @@ Summary:
 
 
 
-Vim(Vi Improved)  is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems. Vim is often called a "programmer's editor," and so useful for programming that many consider it an entire IDE .
+**Vim(Vi Improved)  is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems. Vim is often called a "programmer's editor," and so useful for programming that many consider it an entire IDE .
 *vim - Vi IMproved, a programmers text editor.
 
-Difference between vi and vim
+
+
+**Difference between vi and vim
 Vi stands for Visual. It is a text editor that is an early attempt to a visual text editor. Vim stands for Vi IMproved. It is an implementation of the Vi standard with many additions.
 
 
-Commands:
+**Commands:
 Find:-  It can be used to find files and directories and perform subsequent operations on them.
 	Ex.- $ find ./GFG -name sample.txt 
-Cut:- The cut command in UNIX is a command for cutting out the sections from each line of files and writing the result to standard output. It can be used to cut parts of a line by byte position, character and field
+
+
+**Cut:- The cut command in UNIX is a command for cutting out the sections from each line of files and writing the result to standard output. It can be used to cut parts of a line by byte position, character and field
 	Syntax:
 cut OPTION... [FILE]...
 
-tac:- tac command in Linux is used to concatenate and print files in reverse. This command will write each FILE to standard output, the last line first. When no file is specified then this command will read the standard input.
+
+**tac:- tac command in Linux is used to concatenate and print files in reverse. This command will write each FILE to standard output, the last line first. When no file is specified then this command will read the standard input.
 Syntax:- tac [OPTION]... [FILE]...
 
 **Pushd and popd:- pushd and popd are commands that allow you to work with directory stack and change the current working directory in Linux and other Unix-like operating systems.
@@ -272,7 +289,8 @@ pushd [OPTIONS] [DIRECTORY]
 popd [OPTIONS]
 
 
-Difference:- The first time pushd dir is called, pushd pushes the current directory onto the stack, then cds to dir and pushes it onto the stack. Subsequent calls to pushd dir cd to dir and push dir only onto the stack. popd removes the top directory off the stack, revealing a new top. Then it cds to the new top directory.
+
+**Difference:- The first time pushd dir is called, pushd pushes the current directory onto the stack, then cds to dir and pushes it onto the stack. Subsequent calls to pushd dir cd to dir and push dir only onto the stack. popd removes the top directory off the stack, revealing a new top. Then it cds to the new top directory.
 
 **echo:- echo command in linux is used to display line of text/string that are passed as an argument . This is a built in command that is mostly used in shell scripts and batch files to output status text to the screen or a file.
 	Syntax- echo [option] [string]

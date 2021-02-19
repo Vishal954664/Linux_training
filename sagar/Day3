@@ -1,11 +1,14 @@
 Text processing:- Text processing is the automated process of analyzing text data for getting structured information. Commands affecting text and text files sort. File sort utility, often used as a filter in a pipe. This command sorts a text stream or file forwards or backwards, or according to various keys or character positions.
 
 some of the useful file or text filters in Linux:-
-1.	Awk Command
+**1.	Awk Command
 AWK command in Linux enable a programmer to write useful programs in the form of statements defining specific patterns to be searched for in each line of the file and the action which is to be taken when a match is found within a line. AWK command in Unix is used for pattern processing and scanning.
+
 Awk is a remarkable pattern scanning and processing language, it can be used to build useful filters in Linux.
-Awk is a general-purpose scripting language designed for advanced text processing. It is mostly used as a reporting and analysis tool.
-		$ man awk
+
+Awk is a general-purpose scripting language designed for advanced text processing.
+	
+	$ man awk
 
 
 	2. Sed Command
