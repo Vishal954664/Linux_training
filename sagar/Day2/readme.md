@@ -256,7 +256,64 @@ VI Editing commands
 •	Learning to use this editor can benefit you in crea
 
 
+**for copy
+	select the line (visual mode)
+	and command:- (:put)
+	
+	
+**for cut
+	in normal mode press - dd
+	and command (:put)
+	
 
+**for delete
+	ab
+	cd
+	ef
+	gh
+	ij
+	kl
+	mn
+	op
+				if we want delete the 6 number of line than- 6dd
+				
+**press gg to go end of the line
+**presss 6gg to go to 5th number of the line
+
+**front of the line:- shift+g
+*go to second line:- shift+2gg
+
+
+**for search:- top to bottom
+	/(search word)- enter
+	bottom to top-           ?/(searcg word)- enter 
+	
+	
+**replace word:-
+	this is first line     						that is first line
+	this is second line						that is second line
+	this is third line						that is third line
+	this is forth line						that is forth line
+					:%s/this/that
+					
+					
+	this is another line	
+	this is another line
+	this is another line
+	this is another line
+	this is another line
+					
+**if you want some change and some do not change
+		:%s/another/other/c				(y/n)
+		
+		
+**replace:-  %s/another/other
+
+
+**make another file in same 
+	:split file2.txt (for horizontal)
+	
+	:vsplit file2.txt (for vertical)
 
 **Vim(Vi Improved)  is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems. Vim is often called a "programmer's editor," and so useful for programming that many consider it an entire IDE .
 *vim - Vi IMproved, a programmers text editor.
