@@ -356,8 +356,42 @@ hii this is vishal
 
 
 
+-------------------------------------------------------------------------------------------------------
+## tac commad 
 
 
+Tac commad in linux to add String (concatenate) and print files in reverse . Last line will 
+be Printed first on Terminal .
+
+
+------------------------------------------------------------------------------------------------------------------
+### awk 
+ 
+ 
+ 
+
+Awk is a Scripting language used in linux shell it is used for searching patterns and string 
+and it returns matching pattern from the files .
+
+
+
+--------------------------------------------------------------------------------------------------------------
+##SED 
+
+
+Sed is used for text substitution and delteion it can search within the range .
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+### Grep 
+
+Grep is used a filter to find the matching text in the files .
+
+
+
+____________________________________________________________________________________________________________
 
 
 
