@@ -30,7 +30,19 @@ using terminal:-
 **Deleting disabling account:- for disabling an account using terminal, remove the password set on the account.
 		sudo passwd -l 'newusersagar'
 		
+		
+**group add- sudo groupadd binod
+		to check groups:- cat/etc/group/grep binod
+		
+
+**group delete:- sudo groupdel binod
+
+**user check:- awk-f:'{print $1}'/etc/passwd
+
+**user change- su-l sagar
+		to check:- whoami
 **to delete an account:- sudo userdel -r 'newusersagar'
+
 1. To list out all the users in Linux, use the awk command with -F option. Here, we are accessing a file and printing only first colum with the help of print $1 and awk.
 awk -F':' '{ print $1}' /etc/passwd
 
