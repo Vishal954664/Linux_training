@@ -3,6 +3,34 @@ User management:- User management includes everything from creating a user to de
 	Normally Linux/Unix based systems have two user accounts; a general user account, and the root account, which is the super user that can access everything on the machine, make system changes, and administer other users.
 
 In a single directory, we can create 60,000 users. Now we will discuss the important commands to manage users in Linux.
+
+**commands:-
+Add a user:  	sudo adduser username
+disable a user: sudo passwd-l 'username'
+delete a user:-  sudo userdl-r 'username'
+
+
+add user to a user group - sudo usermod -a-G GROUPNAME USERNAME
+
+remove user from a user group - sudo deluser USER GROUPNAME
+
+gives information on all logged in user - finger
+
+gives information of a particular user - finger username
+
+**Creating a user:- in linux, every user is assigned an individual which contains all the files, information and data of the user.
+
+using terminal:-
+ 		step1.- use command sudo user :-   $sudo adduser newusersagar
+		
+		step2. enter password for the new account
+		
+		step3. enter details of the user and press Y
+		
+**Deleting disabling account:- for disabling an account using terminal, remove the password set on the account.
+		sudo passwd -l 'newusersagar'
+		
+**to delete an account:- sudo userdel -r 'newusersagar'
 1. To list out all the users in Linux, use the awk command with -F option. Here, we are accessing a file and printing only first colum with the help of print $1 and awk.
 awk -F':' '{ print $1}' /etc/passwd
 
