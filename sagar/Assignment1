@@ -1,0 +1,40 @@
+For Sagar
+
+
+sagar@sagar-VirtualBox:~$ touch user1.txt
+
+sagar@sagar-VirtualBox:~$ user1=$(cat user1.txt | awk '{print $1}')
+
+sagar@sagar-VirtualBox:~$ group=$(cat user1.txt | awk '{print $2}')
+
+sagar@sagar-VirtualBox:~$ pass=$(cat user1.txt | awk '{print $3}')
+
+sagar@sagar-VirtualBox:~$ direc1=$(cat user1.txt | awk '{print $4}')
+
+sagar@sagar-VirtualBox:~$ shell1=$(cat user1.txt | awk '{print $5}')
+
+sagar@sagar-VirtualBox:~$ groupadd $group
+
+sagar@sagar-VirtualBox:~$ sudo groupadd $group
+
+sagar@sagar-VirtualBox:~$ sudo useradd $user1 -p $pass1 -g $group -d $shell -s $dir1
+
+sagar@sagar-VirtualBox:~$ echo $user
+sagar
+
+sagar@sagar-VirtualBox:~$ echo $password
+sagar@123456
+
+sagar@sagar-VirtualBox:~$ echo $group
+dev
+
+sagar@sagar-VirtualBox:~$ echo $shell
+/home/sagar
+
+sagar@sagar-VirtualBox:~$ 
+
+
+
+For Vishal:-
+
+
