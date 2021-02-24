@@ -1,0 +1,41 @@
+Linux file system:- A Linux file system is a structured collection of files on a disk drive or a partition.
+	 A partition is a segment of memory and contains some specific data. 
+	In our machine, there can be various partitions of the memory. Generally, every partition contains a file system.
+
+The general-purpose computer system needs to store data systematically so that we can easily access the files in less time.
+It stores the data on hard disks (HDD) or some equivalent storage type. There may be below reasons for maintaining the file system:
+
+Computer saves data to the RAM storage; it may lose the data if it gets turned off. 
+However, there is non-volatile RAM (Flash RAM and SSD) that is available to maintain the data after the power interruption.
+
+
+The linux file system contains the following sections:-
+1. the root directory(/)
+2. A specific data storage format (EXT3, EXT4, XFS, BTRFS etc)
+3. A partition or logical volume having a particular system.
+
+
+what is the linux file sysytem?
+	Linux file system is generally a built-in layer of a Linux operating system used to handle the data management of the storage. 
+It helps to arrange the file on the disk storage. 
+It manages the file name, file size, creation date, and much more information about a file.
+
+
+Let's discuss each of the file system:-
+The file system ext stands for Extended File System. it was primarily developed fir minix os.
+the ext file system is an older version, and is no longer used due to some limitations.
+
+ext2:- it is first Linux file system that allows managing two terabytes of data.
+
+ext3:- ext3 is developed through ext2,
+	 it is an upgraded version of Ext2 and contains backward compatibility. 
+	The major drawback of ext3 is that it does not support servers because this file system does not support file recovery and disk snapshot.
+
+ext4:- Ext4 file system is the faster file system among all the Ext file systems.
+	 It is a very compatible option for the SSD (solid-state drive) disks, and it is the default file system in Linux distribution.
+
+xfs:- XFS file system was considered as high-speed JFS(Journaled File System), which is developed for parallel I/O processing. 
+NASA still using this file system with its high storage server (300+ Terabyte server).
+
+
+
