@@ -1,0 +1,15 @@
+process management :-  Process Management is the series of tasks a System Administrator completes to monitor, manage, and maintain instances of running applications.
+ 
+ Starting a Process:-
+            Foreground Processes:- every process that start runs in the foreground. It gets its input from the keyboard and sends its output to the screen.
+            for see all files:- $ls ch*.doc
+            
+            Background Processes:- The advantage of running a process in the background is that is run other commands; 
+            we do not have to wait until it completes to start another!
+            The simplest way to start a background process is to add an ampersand (&) at the end of the command.
+                                  $ls ch*.doc &
+                              
+  parent and child processes:- Each unix process has two ID numbers assigned to it: The Process ID (pid) and the Parent process ID (ppid). 
+          Each user process in the system has a parent process.
+        Most of the commands that run have the shell as their parent.
+        command for listed both the process ID and the parent process ID. :-  ps -f                            
