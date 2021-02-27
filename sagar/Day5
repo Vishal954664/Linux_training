@@ -71,4 +71,31 @@ Special permission:- SUID(Set owner User ID) is a special permission assigned to
 
 
 Linux package management:- package management is a method of installing and maintaining software on the system.
-		
+
+apt:- The apt-get utility is a powerful and free package management command line program, that is used to work with Ubuntu’s APT (Advanced Packaging Tool) 
+	library to perform installation of new software packages, removing existing software packages, 
+	upgrading of existing software packages and even used to upgrading the entire operating system.
+	
+	To list all the available packages:- $ apt-cache pkgnames
+	
+dpkg:- dpkg is the main package management program in Debian and Debian based System. 
+	It is used to install, build, remove, and manage packages. Aptitude is the primary front-end to dpkg.
+	
+	command for install a package:- [root@sagar~]# dpkg -i sagar1234.deb
+	List all the installed Packages:- [root@sagar~]# dpkg -l
+	Remove a Package:- [root@sagar~]# dpkg -r sagar1234
+	
+yum:- YUM (Yellowdog Updater Modified) is an open source command-line as well as graphical based package management tool
+	for RPM (RedHat Package Manager) based Linux systems. 
+	It allows users and system administrator to easily install, update, remove or search software packages on a systems.
+	
+	install a package with yum:-  # yum install firefox
+	remove : remove
+	
+	
+rpm:- YUM (Yellowdog Updater Modified) is an open source command-line as well as graphical based package management tool
+	for RPM (RedHat Package Manager) based Linux systems.
+	It allows users and system administrator to easily install, update, remove or search software packages on a systems.
+	to install an rpm package:-[root@sagar]# rpm -ivh sagar1233.rpm
+	
+
