@@ -1,1 +1,74 @@
+Linux file system:- A Linux file system is a structured collection of files on a disk drive or a partition.
+	 A partition is a segment of memory and contains some specific data. 
+	In our machine, there can be various partitions of the memory. Generally, every partition contains a file system.
 
+The general-purpose computer system needs to store data systematically so that we can easily access the files in less time.
+It stores the data on hard disks (HDD) or some equivalent storage type. There may be below reasons for maintaining the file system:
+
+Computer saves data to the RAM storage; it may lose the data if it gets turned off. 
+However, there is non-volatile RAM (Flash RAM and SSD) that is available to maintain the data after the power interruption.
+
+
+The linux file system contains the following sections:-
+1. the root directory(/)
+2. A specific data storage format (EXT3, EXT4, XFS, BTRFS etc)
+3. A partition or logical volume having a particular system.
+
+
+what is the linux file sysytem?
+	Linux file system is generally a built-in layer of a Linux operating system used to handle the data management of the storage. 
+It helps to arrange the file on the disk storage. 
+It manages the file name, file size, creation date, and much more information about a file.
+
+
+Let's discuss each of the file system:-
+The file system ext stands for Extended File System. it was primarily developed fir minix os.
+the ext file system is an older version, and is no longer used due to some limitations.
+
+ext2:- it is first Linux file system that allows managing two terabytes of data.
+
+ext3:- ext3 is developed through ext2,
+	 it is an upgraded version of Ext2 and contains backward compatibility. 
+	The major drawback of ext3 is that it does not support servers because this file system does not support file recovery and disk snapshot.
+
+ext4:- Ext4 file system is the faster file system among all the Ext file systems.
+	 It is a very compatible option for the SSD (solid-state drive) disks, and it is the default file system in Linux distribution.
+
+xfs:- XFS file system was considered as high-speed JFS(Journaled File System), which is developed for parallel I/O processing. 
+NASA still using this file system with its high storage server (300+ Terabyte server).
+
+
+File security:- On a database management system, most security issues revolve around protecting valuable data from unauthorized use or modification. 
+	The use of secure passwords is the best way to limit access by users and therefore restrict file access. 
+
+permission:- Linux is a clone of UNIX, the multi-user operating system which can be accessed by many users simultaneously. Linux can also be used in mainframes and servers without any modifications.
+	every file and directory in our linux/unix system has following 3 permission:
+	1. Read:- this permission gives the authority to open and read a file. 
+		read permission on a direcory gives the ability to list the content.
+
+	2. Write:- the write permission gives the authority to modify the content of a file.
+
+	3. Execute:- in linux, we can not run a program unless the execute permission is set.if the execute permission is not swt,
+			we can't be able to see/modify the program code. but not run it.
+
+	on terminal:- about the unix permission given to the owner, user group and the world:-  ls -l
+			changing file/directory permission with 'chmod' command:- chmod permission filename.
+
+
+ownership:- Every file and directory on our linux system assigned 3 types of owner:- 
+	1.User:- A user is the owner of the file. By default, the person who created a file becomes its owner. Hence, a user is also sometimes called an owner.
+
+	2. Group:- A user- group can contain multiple users. All users belonging to a group will have the same Linux group permissions access to the file.
+			Suppose we have a project where a number of people require access to a file. Instead of manually assigning permissions to each user, first we could add all users to a group, 
+			and assign group permission to file such that only this group members and no one else can read or modify the files.
+	
+	3. other:- Any other user who has access to a file. This person has neither created the file, nor he belongs to a usergroup who could own the file.
+
+
+Special permission:- SUID(Set owner User ID) is a special permission assigned to a file. These permissions allow the file being executed to be executed with the privileges of the owner. For example, 
+	if a file was owned by the root user and has the setuid bit set, no matter who executed the file it would always run with root user privileges.
+
+
+
+Linux package management:- package management is a method of installing and maintaining software on the system.
+		
