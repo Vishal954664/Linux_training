@@ -1,0 +1,47 @@
+Linux mount:- mount command is used to mount the filesystem found on a device to big tree structure(Linux filesystem) rooted at ‘/‘. Conversely,
+          another command umount can be used to detach these devices from the Tree.
+          All files accessible in Unix, or a Unix-style system such as Linux, are arranged in one big tree: 
+          the file hierarchy, rooted at /. These files can be spread out over several devices. The mount command attaches a filesystem, located on some device or other, to the file tree. Conversely, the umount command will detach it again.
+
+          syntax:- mount -t type device dir
+          
+
+umount:- 
+
+
+
+
+
+
+
+
+fstab:- The fstab (or file systems table) file is a system configuration file commonly found at /etc/fstab on Unix and Unix-like computer systems.
+         In Linux, it is part of the util-linux package.
+         
+         
+         
+         
+         
+LVM:- LVM is a tool for logical volume management which includes allocating disks, striping, mirroring and resizing logical volumes. 
+        With LVM, a hard drive or set of hard drives is allocated to one or more physical volumes. 
+        LVM physical volumes can be placed on other block devices which might span two or more disks.
+        
+Create and manage :- These operations are performed using the following commands:
+
+              adduser: add a user to the system.
+
+              userdel: delete a user account and related files.
+  
+              addgroup: add a group to the system.
+
+              delgroup: remove a group from the system.
+
+              usermod: modify a user account.
+
+              chage: change user password expiry information.
+
+              sudo: run one or more commands as another user (typically with superuser permissions).    
+              
+              Relevant files: /etc/passwd (user information), /etc/shadow (encrypted passwords), /etc/group (group information) and /etc/sudoers (configuration for sudo).
+              
+              
