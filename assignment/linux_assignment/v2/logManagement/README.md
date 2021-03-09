@@ -1,0 +1,21 @@
+ - Install nginx, snoopy
+    - Explore about snoopy
+    - Host your nginx in such a fashion
+        - For every team there would be a domain name 
+            - nijaturtle.opstree.com
+            - ninjawarriors.opstree.com
+        - You have to also ensure the error & access logs for each team mebbers should be separate.
+        - Every team member detalils should be accessed as
+            - nijaturtle.opstree.com/aastha.html
+            - nijaturtle.opstree.com/nishant.html
+            - ninjawarriors.opstree.com/jatin.html
+            - ninjawarriors.opstree.com/siddharth.html
+    - Create a utility to cleanup the logs, please note:
+        - You should not be using logrotate. 
+        - Log cleanup information should be stored in a configuration file
+        - Below are the cleanup configuration options
+            - Size basis i.e 40 kb
+            - Time basis i.e 08:00
+            - Will it be deleted or backed up 
+            - If backed up, how many backup needs to be retained 
+        - The utility should run as a background deamon

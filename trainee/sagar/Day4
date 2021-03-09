@@ -78,5 +78,56 @@ Example: sagar userdel -r vishal
 
 
 
+Major config files:- most configuration files are stored in the /etc directory. 
+	Content can be viewed using the cat command, which sends text files to the standard output.
+
+.bashrc:- The .bashrc file is a script file that’s executed when a user logs in. The file itself contains a series of configurations for the terminal session. 
+	This includes setting up or enabling: coloring, completion, shell history.
+	it is a hidden file and simple ls command won't show the files.
+
+
+	To view hidden files :- $ls-a
+	
+	To view the bashrc file:- cat.bashrc
+
+Defining functions in bashrc:- it can be used to define functions that reduce redundant efforts.
+		
+	now, we enter the .bashrc file in editing mode:- $vi.bashrc
+
+
+bash_profile:- profile or . bash_profile are the default versions of these files exist in the /etc/skel directory. 
+	Files in that directory are copied into the Ubuntu home directories when user accounts are created on an Ubuntu system--including the user account you create as part of installing Ubuntu.
+
+
+hosts :- The hosts file is a plain text file that all operating systems use to translate hostnames (also known as web addresses or URLs(uniform resource locator)) into IP(internet protocol) addresses.
+	The Linux Hosts File's Location:- /etc/hosts
+	
+
+
+passwd:- passwd command in Linux is used to change the user account passwords. The root user reserves change the password for any user on the system, 
+	while a normal user can only change the account password for his or her own account.
+		syntax:- passwd [options] [username] 
+
+
+shadow:- In the Linux operating system, a shadow password file is a system file in which encryption user password are stored so that they aren't available to people who try to break into the system. 
+	Ordinarily, user information, including passwords, is kept in a system file called /etc/passwd .
+
+
+
+bash_completion:-Bash completion is a functionality through which Bash helps users type their commands more quickly and easily. 
+	It does this by presenting possible options when users press the Tab key while typing a command.
+
+
+hostname:-hostname command in Linux is used to obtain the DNS(Domain Name System) name and set the system's hostname or NIS(Network Information System) domain name.
+	 A hostname is a name which is given to a computer and it attached to the network.
+	 Its main purpose is to uniquely identify over a network.
+
+	Q.How do I find my hostname in Linux?
+	The procedure to find the computer name on Linux:
+	1. Open a command-line terminal app (select Applications > Accessories > Terminal), and then type:
+		hostname. hostnamectl. cat /proc/sys/kernel/hostname.
+	2. Press [Enter] key.
+
+
 
 	
