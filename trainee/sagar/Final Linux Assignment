@@ -149,3 +149,24 @@ Q. What are the defualt policies in iptables and What it signifies?
 Ans:- The default policy is ACCEPT, change the policy to DROP for all the INPUT, FORWARD, OUTPUT.
 	 For every firewall rule, we need to define two rules, i.e., one for In-coming and another for Out-going.
 	 If we trust the internal users, we can use the DROP for incoming rules, and the default outgoing will be ACCEPT.
+	 
+	 
+	 
+	 
+	 
+	 #!/bin/bash
+sudo iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+ 
+iptables -F
+ 
+iptables -X
+
+iptables -Z 
+iptables -t nat -F
+iptables -t nat -X
+iptables -t mangle -F
+iptables -t mangle -X
+iptables iptables -t raw -F
+iptables -t raw -X
