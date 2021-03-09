@@ -82,7 +82,7 @@ Pictures
 projecttest
 Public
 read.txt
-sagar
+vishal
 snap
 Templates
 Videos
@@ -312,10 +312,10 @@ Raj
 It is commad in linux to locate files folder it can search files by name ,creation date ,modification date and by user in mutiple user platform . 
 
 
-vishal@vishal-VirtualBox:~$ find -name sagar.txt
+vishal@vishal-VirtualBox:~$ find -name vishal.txt
 
 
-./sagar.txt
+./vishal.txt
 
 
 
