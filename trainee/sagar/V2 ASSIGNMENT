@@ -1,5 +1,24 @@
-File Management:
-  #!/bin/bash
+File Management:-
+
+create Shell Script Programs in Linux
+#!/bin/sh
+clear
+read dir1 dir2
+y="addDir"
+z="delete"
+
+mkdir file1.txt
+addDir 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #!/bin/bash
 clear
 read x  z g
 y="addDir"
@@ -123,15 +142,15 @@ fi
 
 Use management:- 
 #!/bin/bash
-read x y z s
+read sagar tinku vishal mithlesh
 a=addTeam
 b=addUser
-if [ $a == $x ]
+if [ $a == $sagar ]
 then
-sudo groupadd $y
-elif [ $b == $x ]
+sudo groupadd $tinku
+elif [ $b == $sagar ]
 then
-sudo usermod -a -G $z $s
+sudo usermod -a -G $vishal $mithlesh
 else 
 echo"wrong Input"
 fi
