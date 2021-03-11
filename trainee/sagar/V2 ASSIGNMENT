@@ -1,0 +1,156 @@
+File Management:-
+
+create Shell Script Programs in Linux
+#!/bin/sh
+clear
+read dir1 dir2
+y="addDir"
+z="delete"
+
+mkdir file1.txt
+addDir 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #!/bin/bash
+clear
+read x  z g
+y="addDir"
+k="delete"
+m="listFiles"
+j="listAll"
+l="addFile"
+w="addText"
+if [ $x == $y ]
+then 
+ mkdir $z
+elif [ $x == $k ]
+then 
+ rm -r $z
+elif [ $x == $m ]
+then
+ ls -d */ $z
+elif [ $x == $j ]
+then
+ ls 
+elif [ $x == $l ]
+then
+ touch $z
+elif [ $x == $w ]
+then
+ echo "$g" > "$z"
+else
+ echo "no"
+fi
+
+
+
+Process Management:- 
+#!/bin/bash
+clear
+read x y z
+d=cpu
+c=memory
+a=topprocess
+ab=RunningDurationProcess
+ac=listOrphanProcess
+ad=listZombieProcess
+ae=killProcess
+af=ListWaitingProcess
+
+if [ $x == $a  ]
+then
+   if [ $z == $d ]
+   then
+      ps aux | sort -nrk 3,3 | head -n $y
+     fi
+   if [ $z == $c ]
+    then
+      ps aux --sort -rss | head -n $y
+     fi
+    
+elif [ $x == $ab  ]
+then
+ ps -p $y -o etime
+elif [ $x == $ac  ]
+then
+ ps -elf | head -1; ps -elf | awk '{if ($5 == 1 && $3 != "root") {print $0}}' | head
+elif [ $x == $ad  ]
+then
+ ps aux | grep 'Z'
+elif [ $x == $ae  ]
+then 
+ ps -ef | grep $y
+elif [ $x == $af ]
+then 
+ top -i
+else
+ echo "wrong input"
+
+
+fi
+
+
+
+
+
+
+
+
+
+Text processing:- 
+
+#!/bin/bash
+clear
+read x y z l
+a=addLineTop
+b=addLineBottom
+c=addLineAt
+d=ReplaceWord
+e=delteLine
+if [ $x == $a ]
+then 
+ echo $z | cat - $y | tee $y
+elif [ $x == $b ]
+ then 
+   echo $z >> $y
+elif [ $x == $c ]
+ then 
+ sed -i "${z}i${z} ${l}" $y
+elif [ $x == $d ]
+then 
+ sed "s/${y}/${z}/" $l
+elif [ $x == $e ] 
+then 
+ sed "${z}d" $y
+ 
+fi
+
+
+
+
+
+
+
+
+
+Use management:- 
+#!/bin/bash
+read sagar tinku vishal mithlesh
+a=addTeam
+b=addUser
+if [ $a == $sagar ]
+then
+sudo groupadd $tinku
+elif [ $b == $sagar ]
+then
+sudo usermod -a -G $vishal $mithlesh
+else 
+echo"wrong Input"
+fi
