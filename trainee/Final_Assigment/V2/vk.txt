@@ -1,0 +1,11 @@
+  vishal is great
+${text}
+sagar is great
+ test 
+ vishal 
+ "$V" 
+ ${V}
+anything
+	vishal is trainer of 
+ vishal 
+

@@ -134,6 +134,7 @@ function fileUtility {
     actualDir=$3
     filename=$3
     Content=$4
+    endLine=$5
 
     if [[ "$action" == "addDir" ]]
     then
@@ -172,8 +173,33 @@ function fileUtility {
     
      showFileBeginingContent ${outputDir} ${actualDir} ${Content}
      
+    elif [[ "$action" == "showFileEndContent" ]]
+    then
     
-   
+     showFileEndContent ${outputDir} ${actualDir} ${Content}
+    elif [[ "$action" == "showFileContentAtLine" ]]
+    then
+    showFileContentAtLine ${outputDir} ${actualDir} ${Content}
+    elif [[ "$action" == "moveFile" ]]
+    then
+    moveFile ${outputDir} ${actualDir} 
+    
+     elif [[ "$action" == "copyFile" ]]
+    then
+    copyFile  ${outputDir} ${actualDir}
+    
+     elif [[ "$action" == "deleteFile" ]]
+      then
+      deleteFile  ${outputDir} ${actualDir}
+     
+      elif [[ "$action" == "showFileContentForLineRange" ]]
+      then
+      showFileContentForLineRange ${outputDir} ${actualDir} ${Content} ${endLine}
+      
+       elif [[ "$action" == "clearFileContent" ]]
+      then
+      clearFileContent ${outputDir} ${actualDir}
+      
     
          
         
