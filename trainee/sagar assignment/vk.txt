@@ -1,0 +1,10 @@
+ my name is sagar
+  ${text}
+ vinod is my bhaiya
+  test 
+  vinod
+ "$V"
+  ${V}
+ anything
+ sagar is my nam
+  vinod
