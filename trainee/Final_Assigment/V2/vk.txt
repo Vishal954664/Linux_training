@@ -2,6 +2,8 @@
 ${text}
 sagar is great
  test 
+ this is text editor test
+ {V}
  vishal 
  "$V" 
  ${V}

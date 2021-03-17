@@ -34,17 +34,73 @@ function addLineBottom {
 
 }
 
+function addLineAt {
+	file=$1
+	lineNo=$2
+	line=$3
+	sed -i " ${lineNo} i\ ${line}" ${file}
+	
+}
+
+function updateFirstWord {
+	file=$1
+	word=$2
+	
+
+
+}
+function insertWord {
+	
+
+
+}
+
+function deleteLine {
+	file=$1
+	lineNo=$2
+	sed -e " ${lineNo}d" ${file}
+
+}
+function deleteWordinLine {
+	file=$1
+	lineNo=$2
+	word=$3
+	sed -n ${lineNo}p ${file} | sed -e  "s/\<${word}\>//g"
+
+
+}
+
 function textEditorUtility {
 	action=$1
 	file=$2
 	line=$3
+	lineNo=$4
+
 	
  if [[ "$action" == "addLineTop" ]]
     then
     echo "[INFO] Got this action: ${action}, now going to add ${line} at begining of  ${file} " 
     addLineTop ${file} ${line}
+ elif [[ "$action" == "addLineBottom" ]]
+ then
+	echo "[INFO] Got this action: ${action}, now going to add ${line} at bottom of  ${file} " 
+	addLineBottom ${file} ${line} 
+ elif [[ "$action" == "addLineAt" ]]
+ 
+     echo "[INFO] Got this action: ${action}, now going to add ${line} at line no ${lineNo} of  ${file} " 
+     addLineAt ${file} ${lineNo} ${line} 
+
+ elif [[" $action" == "deleteLine" ]]	
+ 	then 
+ 	echo "[INFO] Got this action: ${action}, now going to delte line no ${file} in ${line}"
+ 	deleteLine ${file} ${line} 
+ 	
+ elif  [[" $action" == "deleteWordinLine" ]]	
+ 	then 
+ 	echo "[INFO] Got this action: ${action}, now going to delete word  ${lineNo} in line no ${line} in ${file}"
+ 	deleteWordinLine ${file} ${line} ${lineNo}
         
    fi
 }
-textEditorUtility $1 $2 $3
+textEditorUtility $1 $2 $3 $4
 
