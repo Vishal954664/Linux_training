@@ -130,75 +130,111 @@ function clearFileContent {
 }
 function fileUtility {
     action=$1
-    outputDir=$2
-    actualDir=$3
-    filename=$3
-    Content=$4
-    endLine=$5
+   
 
     if [[ "$action" == "addDir" ]]
     then
+    if [[ "$#" == 3 ]]
+    then
+    outputDir=$2
+    actualDir=$3
+    
+    
         echo "[INFO] Got this action: ${action}, now going to add this directory: ${actualDir} inside: ${outputDir}"
         createDir ${outputDir} ${actualDir}
+        else 
+    echo "No of arguments required is 3"
+    fi
     elif [[ "$action" == "listFiles" ]]
     then
+    outputDir=$2
     echo "[INFO] Got this action: ${action}, now going to list files in this directory: ${outputDir} "
     listFiles  ${outputDir}
     elif [[ "$action" == "listDir" ]]
     then
+     outputDir=$2
     echo "[INFO] Got this action: ${action}, now going to list Directory in this directory: ${outputDir} "
     listDir  ${outputDir}
     elif [[ "$action" == "listAll" ]]
     then
+     outputDir=$2
     echo "[INFO] Got this action: ${action}, now going to list all files and directories in this directory: ${outputDir} "
     listAll  ${outputDir}
     elif [[ "$action" == "deleteDir" ]]
     then
+    outputDir=$2
+    actualDir=$3
     echo "[INFO] Got this action: ${action}, now going to delete this directory: ${actualDir} inside: ${outputDir}"
     deleteDir ${outputDir} ${actualDir}
     elif [[ "$action" == "addContentAtbeigning" ]]
     then
-    echo "[INFO] Got this action: ${action}, now going to add ${Content} at  firstline of ${actualDir} inside: ${outputDir}"
+    outputDir=$2
+    outputFile=$3
+    Content=$4
+    echo "[INFO] Got this action: ${action}, now going to add ${Content} at  firstline of ${outputFile} inside: ${outputDir}"
     addContentAtbeigning ${outputDir} ${actualDir} ${Content}
     elif [[ "$action" == "addFile" ]]
     then
-    echo "[INFO] Got this action: ${action}, now going to add ${actualDir}  inside: ${outputDir}"
-    addFile ${outputDir} ${actualDir}
+    outputDir=$2
+    file=$3
+    echo "[INFO] Got this action: ${action}, now going to add ${file}  inside: ${outputDir}"
+    addFile ${outputDir} ${file}
     elif [[ "$action" == "addFileWithIntialContent" ]]
     then
     
      addFileWithIntialContent ${outputDir} ${actualDir} ${Content}
     elif [[ "$action" == "showFileBeginingContent" ]]
     then
-    
-     showFileBeginingContent ${outputDir} ${actualDir} ${Content}
+    outputDir=$2
+    outputFile=$3
+    endLine=$4
+    showFileBeginingContent ${outputDir} ${outputFile} ${endLine}
      
     elif [[ "$action" == "showFileEndContent" ]]
     then
-    
-     showFileEndContent ${outputDir} ${actualDir} ${Content}
+    outputDir=$2
+    outputFile=$3
+    endLine=$4
+    showFileEndContent ${outputDir} ${outputFile} ${endLine}
     elif [[ "$action" == "showFileContentAtLine" ]]
     then
-    showFileContentAtLine ${outputDir} ${actualDir} ${Content}
+    outputDir=$2
+    outputFile=$3
+    Line=$4
+    
+    showFileContentAtLine ${outputDir} ${outputFile} ${Line}
     elif [[ "$action" == "moveFile" ]]
     then
-    moveFile ${outputDir} ${actualDir} 
+    location=$2
+    destination=$3
+    
+    moveFile ${location} ${destination} 
     
      elif [[ "$action" == "copyFile" ]]
     then
-    copyFile  ${outputDir} ${actualDir}
+    location=$2
+    destination=$3
+    copyFile   ${location} ${destination} 
     
      elif [[ "$action" == "deleteFile" ]]
       then
-      deleteFile  ${outputDir} ${actualDir}
+      outputDir=$2
+      file=$3
+      deleteFile  ${outputDir} ${file}
      
       elif [[ "$action" == "showFileContentForLineRange" ]]
       then
-      showFileContentForLineRange ${outputDir} ${actualDir} ${Content} ${endLine}
+       outputDir=$2
+ 	outputFile=$3
+	beigning=$4
+	end=$5
+      showFileContentForLineRange ${outputDir} ${outputFile} ${beignining} ${end}
       
        elif [[ "$action" == "clearFileContent" ]]
       then
-      clearFileContent ${outputDir} ${actualDir}
+      outputDir=$2
+      file=$3
+      clearFileContent ${outputDir} ${file}
       
     
          
@@ -207,4 +243,7 @@ function fileUtility {
 
 }
 
-fileUtility $1 $2 $3
+fileUtility $@
+
+
+
