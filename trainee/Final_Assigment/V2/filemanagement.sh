@@ -134,111 +134,191 @@ function fileUtility {
 
     if [[ "$action" == "addDir" ]]
     then
-    if [[ "$#" == 3 ]]
-    then
-    outputDir=$2
-    actualDir=$3
-    
-    
-        echo "[INFO] Got this action: ${action}, now going to add this directory: ${actualDir} inside: ${outputDir}"
-        createDir ${outputDir} ${actualDir}
-        else 
-    echo "No of arguments required is 3"
-    fi
+	      if [[ "$#" == 3 ]]
+		      then
+		    outputDir=$2
+		    actualDir=$3
+		    echo "[INFO] Got this action: ${action}, now going to add this directory: ${actualDir} inside: ${outputDir}"
+		   createDir ${outputDir} ${actualDir}
+		else 
+	    echo "No of arguments required is 3 i.e addDir OutputDir actualDir"
+	    fi
     elif [[ "$action" == "listFiles" ]]
     then
-    outputDir=$2
-    echo "[INFO] Got this action: ${action}, now going to list files in this directory: ${outputDir} "
-    listFiles  ${outputDir}
+	    if [[ "$#" == 2 ]]
+	    then
+	    outputDir=$2
+	    echo "[INFO] Got this action: ${action}, now going to list files in this directory: ${outputDir} "
+	    listFiles  ${outputDir}
+	    else 
+	    echo "no of arguments required is 2 i.e listFiles outputDir"
+	    fi
     elif [[ "$action" == "listDir" ]]
     then
-     outputDir=$2
-    echo "[INFO] Got this action: ${action}, now going to list Directory in this directory: ${outputDir} "
-    listDir  ${outputDir}
+	    if [[ "$#" == 2 ]]
+	    then
+	     outputDir=$2
+	    echo "[INFO] Got this action: ${action}, now going to list Directory in this directory: ${outputDir} "
+	    listDir  ${outputDir}
+	    else 
+	    echo "no of arguments required is 2 listDir Directory "
+	    fi
     elif [[ "$action" == "listAll" ]]
     then
-     outputDir=$2
-    echo "[INFO] Got this action: ${action}, now going to list all files and directories in this directory: ${outputDir} "
-    listAll  ${outputDir}
+	    if [[ "$#" == 2 ]] 
+	    then
+	    outputDir=$2
+	    echo "[INFO] Got this action: ${action}, now going to list all files and directories in this directory: ${outputDir} "
+	    listAll  ${outputDir}
+	    else 
+		    echo "no of arguments required is 2  i.e listAll Dirname "
+	    fi
+    
     elif [[ "$action" == "deleteDir" ]]
     then
-    outputDir=$2
-    actualDir=$3
-    echo "[INFO] Got this action: ${action}, now going to delete this directory: ${actualDir} inside: ${outputDir}"
-    deleteDir ${outputDir} ${actualDir}
+	    if [[ "$#" == 3 ]]
+	    then
+	    	outputDir=$2
+	    	actualDir=$3
+    		echo "[INFO] Got this action: ${action}, now going to delete this directory: ${actualDir} inside: ${outputDir}"
+	    	deleteDir ${outputDir} ${actualDir}
+	    else 
+		    echo "no of arguments required is 3  deleteDir outputDir Dirname "
+	    fi
     elif [[ "$action" == "addContentAtbeigning" ]]
     then
-    outputDir=$2
-    outputFile=$3
-    Content=$4
-    echo "[INFO] Got this action: ${action}, now going to add ${Content} at  firstline of ${outputFile} inside: ${outputDir}"
-    addContentAtbeigning ${outputDir} ${actualDir} ${Content}
+    	if [[ "$#" == 4 ]] 
+	    then
+	    outputDir=$2
+	    outputFile=$3
+	    Content=$4
+	    echo "[INFO] Got this action: ${action}, now going to add ${Content} at  firstline of ${outputFile} inside: ${outputDir}"
+	    addContentAtbeigning ${outputDir} ${actualDir} ${Content}
+   	 else
+    
+	    echo "no of arguments required is 4 i.e addContentAtbeigning outputDir actualDir Content "
+   	 fi
     elif [[ "$action" == "addFile" ]]
     then
-    outputDir=$2
-    file=$3
-    echo "[INFO] Got this action: ${action}, now going to add ${file}  inside: ${outputDir}"
-    addFile ${outputDir} ${file}
+   	 if [[ "$#" ==3 ]] 
+	    then
+	    outputDir=$2
+	    file=$3
+	    echo "[INFO] Got this action: ${action}, now going to add ${file}  inside: ${outputDir}"
+	    addFile ${outputDir} ${file}
+    	 else
+    
+	    echo "no of arguments required is 3  i.e addFile outputDir Filename"
+   	 fi
+    
     elif [[ "$action" == "addFileWithIntialContent" ]]
     then
-    
-     addFileWithIntialContent ${outputDir} ${actualDir} ${Content}
+   	 if [[ "$#" == 4 ]] 
+	    then
+	    outputDir=$2
+	    file=$3
+	    Content=$4
+	    addFileWithIntialContent ${outputDir} ${file} ${Content}
+   	 else 
+  	  echo "no of argument required 4 i.e ${action} outputDir file Content"
+   	 fi
     elif [[ "$action" == "showFileBeginingContent" ]]
     then
-    outputDir=$2
-    outputFile=$3
-    endLine=$4
-    showFileBeginingContent ${outputDir} ${outputFile} ${endLine}
+	    if [[ "$#" == 4 ]] 
+		    then
+		    outputDir=$2
+		    outputFile=$3
+		    endLine=$4
+		    showFileBeginingContent ${outputDir} ${outputFile} ${endLine}
+	    else 
+	    	echo "No of arguments required is 4 i.e ${action} outputDir outputfile endLine"
+	    fi
      
     elif [[ "$action" == "showFileEndContent" ]]
     then
-    outputDir=$2
-    outputFile=$3
-    endLine=$4
-    showFileEndContent ${outputDir} ${outputFile} ${endLine}
+	    if [[ "$#" == 4 ]] 
+		    then
+		    outputDir=$2
+		    outputFile=$3
+		    endLine=$4
+		    showFileEndContent ${outputDir} ${outputFile} ${endLine}
+	    else 
+	   	 echo "no of arguments required is 4 i.e ${action} outputDir outputFile endLine"
+	    fi
     elif [[ "$action" == "showFileContentAtLine" ]]
     then
-    outputDir=$2
-    outputFile=$3
-    Line=$4
-    
-    showFileContentAtLine ${outputDir} ${outputFile} ${Line}
+	    if [[ "$#" == 4 ]]
+		    then
+		    outputDir=$2
+		    outputFile=$3
+		    Line=$4
+		    
+		    showFileContentAtLine ${outputDir} ${outputFile} ${Line}
+	    else 
+	    	echo "No of argumuments required is 4 i.e ${action} outputDir outputFile Line"
+	    fi
     elif [[ "$action" == "moveFile" ]]
     then
-    location=$2
-    destination=$3
+    if [[ "$#" == 3 ]] 
+	    then
+	    location=$2
+	    destination=$3
+	    
+	    moveFile ${location} ${destination} 
+    else 
+    	echo "No of Arguments required is 3 i.e ${action} location Destination"
+    fi
     
-    moveFile ${location} ${destination} 
-    
-     elif [[ "$action" == "copyFile" ]]
+    elif [[ "$action" == "copyFile" ]]
     then
-    location=$2
-    destination=$3
-    copyFile   ${location} ${destination} 
-    
-     elif [[ "$action" == "deleteFile" ]]
+	    if [[ "$#" == 3 ]]
+		    then
+		    location=$2
+		    destination=$3
+		    copyFile   ${location} ${destination} 
+	    else 
+	   	 echo "No of Arguments required is 3 i.e ${action} location destination"
+	    fi
+    elif [[ "$action" == "deleteFile" ]]
       then
-      outputDir=$2
-      file=$3
-      deleteFile  ${outputDir} ${file}
+	      if [[ "$#" == 3 ]]
+		      then 
+		      outputDir=$2
+		      file=$3
+		      deleteFile  ${outputDir} ${file}
+	      else 
+	     	 echo "No of arguments required 3 i.e ${action} outputDir file "
+	      fi
      
       elif [[ "$action" == "showFileContentForLineRange" ]]
       then
-       outputDir=$2
- 	outputFile=$3
-	beigning=$4
-	end=$5
-      showFileContentForLineRange ${outputDir} ${outputFile} ${beignining} ${end}
+	      if [[ "$#" ==5 ]]
+	      then
+		       outputDir=$2
+		 	outputFile=$3
+			beigning=$4
+			end=$5
+		      showFileContentForLineRange ${outputDir} ${outputFile} ${beignining} ${end}
+	      else 
+	     	 echo "No of Arguments required is 5 i.e ${action} outputDir outputfile startline endLine"
+	      fi
       
-       elif [[ "$action" == "clearFileContent" ]]
+      elif [[ "$action" == "clearFileContent" ]]
       then
-      outputDir=$2
-      file=$3
-      clearFileContent ${outputDir} ${file}
+	      if [[ "$#" == 3 ]] 
+		      then
+		      outputDir=$2
+		      file=$3
+		      clearFileContent ${outputDir} ${file}
+	      else 
+	      	echo "No of argumennts required is 3 i.e ${action} outputDir file"
+	      fi
       
     
          
-        
+    else 
+    echo "No such action/command found in filutility"
+    helpfunction  
     fi
 
 }
