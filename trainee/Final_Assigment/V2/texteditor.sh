@@ -72,35 +72,72 @@ function deleteWordinLine {
 
 function textEditorUtility {
 	action=$1
-	file=$2
-	line=$3
-	lineNo=$4
+	
 
 	
  if [[ "$action" == "addLineTop" ]]
     then
-    echo "[INFO] Got this action: ${action}, now going to add ${line} at begining of  ${file} " 
-    addLineTop ${file} ${line}
+	    if [[ "$#" == 3 ]]
+		    then
+		    file=$2
+		    line=$3
+		    echo "[INFO] Got this action: ${action}, now going to add ${line} at begining of  ${file} " 
+		    addLineTop ${file} ${line}
+	    else 
+	  	  echo "No of arguments Required is 3 i.e ${action} file line"
+	    fi
  elif [[ "$action" == "addLineBottom" ]]
  then
-	echo "[INFO] Got this action: ${action}, now going to add ${line} at bottom of  ${file} " 
-	addLineBottom ${file} ${line} 
+ 	if [[ "$#" == 3 ]]
+ 	then
+	 	file=$2
+		line=$3
+	 	echo "[INFO] Got this action: ${action}, now going to add ${line} at bottom of  ${file} " 
+		addLineBottom ${file} ${line} 
+	else 
+		echo "No of Arguments required is 3"
+	fi
  elif [[ "$action" == "addLineAt" ]]
+ then
+    if [[ "$#" == 4 ]]
+    then
+    	 file=$2
+    	 lineNo=$2
+    	 line=$3
+ 	
  
-     echo "[INFO] Got this action: ${action}, now going to add ${line} at line no ${lineNo} of  ${file} " 
-     addLineAt ${file} ${lineNo} ${line} 
+	     echo "[INFO] Got this action: ${action}, now going to add ${line} at line no ${lineNo} of  ${file} " 
+	     addLineAt ${file} ${lineNo} ${line} 
+     else 
+	     echo "no of aruments requires is 4 "
+     fi 
 
  elif [[" $action" == "deleteLine" ]]	
  	then 
- 	echo "[INFO] Got this action: ${action}, now going to delte line no ${file} in ${line}"
- 	deleteLine ${file} ${line} 
+	 	if [[ "$#" == 3 ]]
+	 	then
+	 		file=$2
+	 		line=$3
+		 	echo "[INFO] Got this action: ${action}, now going to delte line no ${file} in ${line}"
+		 	deleteLine ${file} ${line} 
+	 	else 
+		 	echo "No of arguments required is 3 "
+	 	fi
  	
  elif  [[" $action" == "deleteWordinLine" ]]	
  	then 
- 	echo "[INFO] Got this action: ${action}, now going to delete word  ${lineNo} in line no ${line} in ${file}"
- 	deleteWordinLine ${file} ${line} ${lineNo}
+	 	if [[ "$#" == 4 ]]
+	 	then
+		 	file=$2
+		 	line=$3
+		 	lineNo=$4
+		 	echo "[INFO] Got this action: ${action}, now going to delete word  ${lineNo} in line no ${line} in ${file}"
+		 	deleteWordinLine ${file} ${line} ${lineNo}
+	 	else 
+		 	echo "No of arguments required is 4 "
+	 	fi
         
    fi
 }
-textEditorUtility $1 $2 $3 $4
+textEditorUtility $@
 
